@@ -9,7 +9,7 @@ API Development
 ## About the Project:
 This is a Web API project that works with a database called ecocloudhub. This database is a SQL Server database that is hosted on Azure. ##
 # The database has three tables:
-        ## namely; Customer, Order, and Product
+        ##namely; Customer, Order, and Product
 
 # Creation of the API
 ##
