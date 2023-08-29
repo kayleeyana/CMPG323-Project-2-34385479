@@ -28,8 +28,8 @@ namespace JWTAuthentication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<logisticsDBContext>(options => options.UseSqlServer("name=ConnectionStrings:ConnStr"));
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:ConnStr"));
+            services.AddDbContext<logisticsDBContext>(options => options.UseSqlServer("DefaultConnection"));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("DefaultConnection"));
 
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v2", new OpenApiInfo
