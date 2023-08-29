@@ -34,15 +34,13 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 
-// Adding Authentication   
+// Adding Authentication  
 builder.Services.AddAuthentication(options =>
 {
-    ValidIssuer = builder.Configuration["Jwt:ValidIssuer"];
-    ValidAudience = builder.Configuration["Jwt:ValidAudience"];
-    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]));
-
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 })
-
             // Adding Jwt Bearer  
             .AddJwtBearer(options =>
             {
@@ -102,33 +100,29 @@ builder.Services.AddSwaggerGen(c =>
         }
     };
     c.AddSecurityRequirement(securityRequirement);
+});
 
 
-    var app = builder.Build();
 
-    // Configure the HTTP request pipeline.
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
-    }
+var app = builder.Build();
 
-    else
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI(options =>
-        {
-            options.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplication16");
-            options.RoutePrefix = string.Empty;
-        });
-    }
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-    app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
-    app.UseAuthorization();
+app.UseAuthentication();
 
-    app.MapControllers();
+app.UseAuthorization();
 
-    app.Run();
+IConfiguration configuration = app.Configuration;
+IWebHostEnvironment environment = app.Environment;
 
-};
+app.MapControllers();
+
+app.Run();
+
