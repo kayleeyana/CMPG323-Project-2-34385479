@@ -40,4 +40,6 @@ The user must register as an admin user because it is the only role that is auth
 ## Logging in:
 The user must click on the login button and insert the newly registered credentials. After logging in the user will receive the token. That token must be saved as it will be used to access the tables since this system uses a token based security.
 
+Ensure that the Readme.md file in the GitHub repository explains how the user would use the API. List all endpoints and additional aspects implemented. 
+
 
