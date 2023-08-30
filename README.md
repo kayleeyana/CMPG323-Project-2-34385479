@@ -11,8 +11,8 @@ This is a Web API project that works with a database called ecocloudhub. This da
         #Order
         #Product
 
-# Microsoft Azure Integration
-##
+# Microsoft Azure Integration###
+
 ![image](https://github.com/kayleeyana/CMPG323-Project-2-34385479/assets/112712495/21febda2-f330-4e85-a637-3054ec6ff3de)
 
 # Microsoft Azure database
@@ -25,8 +25,8 @@ This is a Web API project that works with a database called ecocloudhub. This da
 I used Visual Studio to create the web API. Added controllers that will support the manipulation of tables in the database that is hosted on the Azure server. Thereafter, I implemented security on the API so that no unauthorized user can get access to the API functionality.
 
 # Hosting the API
-I published the API via Visual Studio and pulled it from the Azure side.
-##
+I published the API via Visual Studio and pulled it from the Azure side.##
+
  ![image](https://github.com/kayleeyana/CMPG323-Project-2-34385479/assets/112712495/65d93720-ede6-4766-ba88-07d4a982b214)
 
 ## Security:
