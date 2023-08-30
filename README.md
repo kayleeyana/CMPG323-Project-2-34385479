@@ -14,7 +14,7 @@ This overview provides an outline of the structure and strategies for the CMPG-3
 Each project submission will consist of separate repositories, each with a specific focus:
 ###
 Project 2:
-Repository Name: API Development
+Repository Name: Creating_API 
 ###
 
 Project 3:
@@ -44,11 +44,11 @@ The diagram below provides a visual representation of the structure of each proj
 ###
 
 # BRANCHING STRATEGY:
-The chosen approach for the branching strategy in each project will involve primarily working within the main branch. However, in the event of a bug occurrence, a dedicated development branch will be created specifically to address and resolve the issue.
+The chosen approach for the branching strategy in each project will involve primarily working within the main branch. However, in the event of a bug occurrence, a dedicated development branch will be created specifically to address and resolve the issue. Therefore, all code-related activities are connected to my development branch and the main activities on my main branch.
 
 ###
 # .gitignore USAGE:
-To maintain a clean repository, each project submission will include a .gitignore file. This file will exclude sensitive data from being tracked and committed, ensuring that only relevant and non-sensitive information is shared.
+To maintain a clean repository, each project submission will include a .gitignore file. This file will exclude sensitive data from being tracked and committed, ensuring that only relevant and non-sensitive information is shared. I created a gitignore file for my appsettings.json as it included credentials.
 
 ###
 ###
