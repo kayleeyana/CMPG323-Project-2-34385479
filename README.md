@@ -25,7 +25,7 @@ I used Visual Studio to create the web API. Added controllers that will support 
 
 # Hosting the API
 I published the API via Visual Studio and pulled it from the Azure side.
- ##
+##
  ![image](https://github.com/kayleeyana/CMPG323-Project-2-34385479/assets/112712495/65d93720-ede6-4766-ba88-07d4a982b214)
 
 ## Security:
