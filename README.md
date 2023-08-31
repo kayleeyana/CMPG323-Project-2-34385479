@@ -137,11 +137,11 @@ After successful login, you'll receive an authentication token.
 # Using the API
 Endpoints
 Customer Data
-###GET /api/customers: Retrieve a list of all customers.
-##GET /api/customers/{id}: Retrieve details of a specific customer.##
-POST /api/customers: Create a new customer entry.
-##PUT /api/customers/{id}: Update customer details.
-##DELETE /api/customers/{id}: Delete a customer.
+# GET /api/customers: Retrieve a list of all customers.
+# GET /api/customers/{id}: Retrieve details of a specific customer.##
+# POST /api/customers: Create a new customer entry.
+# PUT /api/customers/{id}: Update customer details.
+# DELETE /api/customers/{id}: Delete a customer.
 
 Order Data
 GET /api/orders: Retrieve a list of all orders.
