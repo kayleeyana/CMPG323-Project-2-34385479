@@ -119,7 +119,7 @@ I published the API via Visual Studio and pulled it from the Azure side.##
  ![image](https://github.com/kayleeyana/CMPG323-Project-2-34385479/assets/112712495/65d93720-ede6-4766-ba88-07d4a982b214)
 
 ## Security:
-The API is secured in the sense that not everyone has access to it right away. You must register an account in order to use the API to access and manipulate database data. This is a token-based, secure system. The server on which the database is hosted is also secured, and those details are not accessible to everyone.
+The API is secured in the sense that not everyone has access to it right away. You must register an account in order to use the API to access and manipulate database data. This is a token-based, secure system. The server on which the database is hosted is also secured, and those details are not accessible to everyone.I also used the git ignore file for all passwords in the appsettings.json file. (For protection purposes)
 
 # API Usage Guide
 
