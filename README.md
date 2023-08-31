@@ -144,18 +144,18 @@ Customer Data
 # DELETE /api/customers/{id}: Delete a customer.
 
 Order Data
-GET /api/orders: Retrieve a list of all orders.
-GET /api/orders/{id}: Retrieve details of a specific order.
-POST /api/orders: Create a new order.
-PUT /api/orders/{id}: Update order details.
-DELETE /api/orders/{id}: Delete an order.
+# GET /api/orders: Retrieve a list of all orders.
+# GET /api/orders/{id}: Retrieve details of a specific order.
+# POST /api/orders: Create a new order.
+# PUT /api/orders/{id}: Update order details.
+# DELETE /api/orders/{id}: Delete an order.
 
 Product Data
-GET /api/products: Retrieve a list of all products.
-GET /api/products/{id}: Retrieve details of a specific product.
-POST /api/products: Create a new product.
-PUT /api/products/{id}: Update product details.
-DELETE /api/products/{id}: Delete a product.
+# GET /api/products: Retrieve a list of all products.
+# GET /api/products/{id}: Retrieve details of a specific product.
+# POST /api/products: Create a new product.
+# PUT /api/products/{id}: Update product details.
+# DELETE /api/products/{id}: Delete a product.
 
 # Authentication
 Include the authentication token received upon login in the Authorization header for each request.
