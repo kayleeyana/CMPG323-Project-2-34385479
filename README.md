@@ -120,15 +120,57 @@ I published the API via Visual Studio and pulled it from the Azure side.##
 ## Security:
 The API is secured in the sense that not everyone has access to it right away. You must register an account in order to use the API to access and manipulate database data. This is a token-based, secure system. The server on which the database is hosted is also secured, and those details are not accessible to everyone.
 
-## How the API should be used by users:
-Upon accessing the API, the user must register an account. Then the user may proceed to login. The user should request a token when accessing tables and manipulating data contained in those tables. The account that should be registered is the admin one because it is the only one that is authorized to access the tables.
+# API Usage Guide
 
-## Registering an account:
-The user must register as an admin user because it is the only role that is authorized to access the tables and table manipulation.
+Welcome to the API Usage Guide for the Project Name API. This guide will help you understand how to interact with the API to access and manipulate data from the ecocloudhub database.
 
-## Logging in:
-The user must click on the login button and insert the newly registered credentials. After logging in the user will receive the token. That token must be saved as it will be used to access the tables since this system uses a token based security.
+# Getting Started
+Register an Account:
 
-Ensure that the Readme.md file in the GitHub repository explains how the user would use the API. List all endpoints and additional aspects implemented. 
+Visit the API registration page to create an admin user account.
+This account is required to access and manipulate database tables.
+
+# Log In:
+Use the login credentials from the registration to log in.
+After successful login, you'll receive an authentication token.
+
+# Using the API
+Endpoints
+Customer Data
+GET /api/customers: Retrieve a list of all customers.
+GET /api/customers/{id}: Retrieve details of a specific customer.
+POST /api/customers: Create a new customer entry.
+PUT /api/customers/{id}: Update customer details.
+DELETE /api/customers/{id}: Delete a customer.
+
+Order Data
+GET /api/orders: Retrieve a list of all orders.
+GET /api/orders/{id}: Retrieve details of a specific order.
+POST /api/orders: Create a new order.
+PUT /api/orders/{id}: Update order details.
+DELETE /api/orders/{id}: Delete an order.
+
+Product Data
+GET /api/products: Retrieve a list of all products.
+GET /api/products/{id}: Retrieve details of a specific product.
+POST /api/products: Create a new product.
+PUT /api/products/{id}: Update product details.
+DELETE /api/products/{id}: Delete a product.
+
+# Authentication
+Include the authentication token received upon login in the Authorization header for each request.
+
+Example: Authorization: Bearer <your-token-here>
+Example Workflow
+
+# Register an admin account.
+Log in to receive the authentication token.
+Use the token in the Authorization header for subsequent requests.
+Access customer, order, and product data using the provided endpoints.
+Make GET, POST, PUT, or DELETE requests as needed.
+Security Notes
+The API is secured using token-based authentication.
+Only admin users have access to the API endpoints.
+The server hosting the database is also secure.
 
 
