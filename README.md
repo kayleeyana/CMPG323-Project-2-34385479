@@ -158,6 +158,8 @@ Product Data
 # PUT /api/products/{id}: Update product details.
 # DELETE /api/products/{id}: Delete a product.
 
+Link to API (Error 404)
+creatingapi20230831134207.azurewebsites.net
 # Authentication
 Include the authentication token received upon login in the Authorization header for each request.
 
