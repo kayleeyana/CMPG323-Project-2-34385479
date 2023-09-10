@@ -158,8 +158,7 @@ Product Data
 # PUT /api/products/{id}: Update product details.
 # DELETE /api/products/{id}: Delete a product.
 
-Link to API (Error 404)
-creatingapi20230831134207.azurewebsites.net
+
 # Authentication
 Include the authentication token received upon login in the Authorization header for each request.
 
@@ -176,4 +175,7 @@ The API is secured using token-based authentication.
 Only admin users have access to the API endpoints.
 The server hosting the database is also secure.
 
+
+# Link to API (Error 404)
+creatingapi20230831134207.azurewebsites.net
 
