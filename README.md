@@ -92,7 +92,7 @@ The server hosting the database is also secure.
 # Resource Group
 https://portal.azure.com/#@nwuac.onmicrosoft.com/resource/subscriptions/ba8bb3d0-bd11-4b50-bb78-9cbb21ab2b3c/resourceGroups/rgEcoPowerSolutions/overview
 
-# Link to API (Error 404)
+# Link to API
 creatingapi20230831134207.azurewebsites.net
 
 
